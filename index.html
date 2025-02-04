@@ -4,17 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
     <title>Holmquist App</title>
 </head>
 <body>
     <header>
         <h1>Oh look it's an app</h1>
     </header>
-<button>Market</button>
-<button>Inventory</button>
-<button>Accounting</button>
+    <div class="wrapper">
+        <div class="section">
+            <button onclick="openModal('saleModal')">New Sale</button>
+            <p>Today's Net Sales: (CC + cash - stall fee)</p>
+            <p>Sales Goal</p>
+        
+            <div id="saleModal" class="modal">
+                <div class="modal-body">
+                    <h1>Let's sell some shit</h1>
+                    <button onclick="addItemToOrder('itemName')">Item Button</button>
+                    <!-- use JS to repeat through the products -->
+                    <button onclick="closeModal()">Close</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="section">
+            <button>Inventory</button>
+        </div>
+        <div class="section">
+            <button>Accounting</button>
+        </div>
+    </div>
     <footer>
-        <p>Made by Heather Loveday</p>
+        <p>Heather Loveday, 2025</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
