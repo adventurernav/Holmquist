@@ -5,13 +5,13 @@
             "abbreviation": "BT",
             "variants": [
                 {
-                    "size": "6 ounces",
+                    "size": "6 oz",
                     "price": 9,
                     "startingInventory": 48,
                     "feb3":46
                 },
                 {
-                    "size": "16 ounces",
+                    "size": "16 oz",
                     "price": 17,
                     "startingInventory": 60,
                     "feb3":53
@@ -26,13 +26,13 @@
             "abbreviation": "CG",
             "variants": [
                 {
-                    "size": "6 ounces",
+                    "size": "6 oz",
                     "price": 9,
                     "startingInventory":24,
                     "feb3":21
                 },
                 {
-                    "size": "16 ounces",
+                    "size": "16 oz",
                     "price": 17,
                     "startingInventory":30,
                     "feb3":32
@@ -47,13 +47,13 @@
             "abbreviation": "FL",
             "variants": [
                 {
-                    "size": "6 ounces",
+                    "size": "6 oz",
                     "price": 9,
                     "startingInventory":24,
                     "feb3":24
                 },
                 {
-                    "size": "16 ounces",
+                    "size": "16 oz",
                     "price": 17,
                     "startingInventory":20,
                     "feb3":18
@@ -68,12 +68,12 @@
             "abbreviation": "SS",
             "variants": [
                 {
-                    "size": "6 ounces",
+                    "size": "6 oz",
                     "price": 9,
                     "startingInventory":24
                 },
                 {
-                    "size": "16 ounces",
+                    "size": "16 oz",
                     "price": 17,
                     "startingInventory":30
                 }
@@ -87,13 +87,13 @@
             "abbreviation": "RO",
             "variants": [
                 {
-                    "size": "6 ounces",
+                    "size": "6 oz",
                     "price": 9,
                     "startingInventory":48,
                     "feb3": 51
                 },
                 {
-                    "size": "16 ounces",
+                    "size": "16 oz",
                     "price": 17,
                     "startingInventory":60,
                     "feb3":52
@@ -108,7 +108,7 @@
             "abbreviation": "NT",
             "variants": [
                 {
-                    "size": "16 ounces",
+                    "size": "16 oz",
                     "price": 17,
                     "startingInventory":20,
                     "feb3":18
@@ -123,7 +123,7 @@
             "abbreviation": "CH",
             "variants": [
                 {
-                    "size": "16 ounces",
+                    "size": "16 oz",
                     "price": 17,
                     "startingInventory":10,
                     "feb3":10
@@ -138,7 +138,7 @@
             "abbreviation": "FL",
             "variants": [
                 {
-                    "size": "16 ounces",
+                    "size": "16 oz",
                     "price": 17,
                     "startingInventory":10,
                     "feb3":10
@@ -153,13 +153,13 @@
             "abbreviation": "Oi",
             "variants": [
                 {
-                    "size": "8 ounces",
+                    "size": "8 oz",
                     "price": 17,
                     "startingInventory":12,
                     "feb3":12
                 },
                 {
-                    "size": "12 ounces",
+                    "size": "12 oz",
                     "price": 22,
                     "startingInventory":10,
                     "feb3":8
@@ -174,7 +174,7 @@
             "abbreviation": "MC",
             "variants": [
                 {
-                    "size": "6 ounces",
+                    "size": "6 oz",
                     "price": 12,
                     "startingInventory":9,
                     "feb3":9
@@ -189,7 +189,7 @@
             "abbreviation": "DC",
             "variants": [
                 {
-                    "size": "6 ounces",
+                    "size": "6 oz",
                     "price": 12,
                     "startingInventory":9,
                     "feb3":9
@@ -204,7 +204,7 @@
             "abbreviation": "GP",
             "variants": [
                 {
-                    "size": "4 x 4 ounces",
+                    "size": "4 x 4 oz",
                     "price": 23,
                     "startingInventory":30,
                     "feb3":33

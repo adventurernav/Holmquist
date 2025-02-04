@@ -1,17 +1,22 @@
 const saleButtonWrapper = document.getElementById("sale-button-wrapper");
+const cartElement = document.getElementById("cart");
 let products = [];
 let cart = [];
+
+let emptyCart = () => {
+  cart = [];
+  cartElement.replaceChildren();
+};
 
 function openModal(id) {
   document.getElementById(id).classList.add("open");
   document.body.classList.add("modal-open");
 }
 
-// close currently open modal
-function closeModal() {
+function cancelModal() {
   document.querySelector(".modal.open").classList.remove("open");
   document.body.classList.remove("modal-open");
-  console.log(cart);
+  emptyCart();
 }
 
 window.addEventListener("load", function () {
@@ -24,14 +29,42 @@ window.addEventListener("load", function () {
 });
 
 function addItemToOrder(event) {
+  let newLi = document.createElement("li");
+  let itemDeleteButton = document.createElement("button");
   const thisItem = event.target.productInfo;
-  let type = thisItem[0];
-  let size = thisItem[1];
-  let price = thisItem[2];
-  cart.push(thisItem)
+  itemDeleteButton.textContent = "Delete";
+  itemDeleteButton.productInfo = thisItem;
+  itemDeleteButton.addEventListener("click", removeItemFromOrder);
+  newLi.innerText = thisItem;
+  newLi.appendChild(itemDeleteButton);
+  cartElement.appendChild(newLi);
+  cart.push(thisItem);
 }
 
-fetch("/data.json", {
+let removeItemFromOrder = (event) => {
+  let productInfo = event.target.productInfo;
+  let indexToRemove = -1;
+
+  cart.forEach((cartItem) => {
+
+    if (productInfo[0] === cartItem[0] && productInfo[1] === cartItem[1]) {
+      indexToRemove = cart.indexOf(cartItem);
+      if (indexToRemove>=0) {
+        cart.splice(indexToRemove,1)
+      }
+    }
+
+  });
+console.log(cart);
+};
+
+let submitCart = () => {
+  // Send the current cart info to the DB and complete the sale
+  console.log(cart);
+  emptyCart();
+};
+
+fetch("data.json", {
   method: "GET",
 })
   .then(function (response) {
