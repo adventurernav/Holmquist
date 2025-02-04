@@ -1,4 +1,5 @@
 const saleButtonWrapper = document.getElementById("sale-button-wrapper");
+const cartElement = document.getElementById("cart");
 let products = [];
 let cart = [];
 
@@ -11,7 +12,6 @@ function openModal(id) {
 function closeModal() {
   document.querySelector(".modal.open").classList.remove("open");
   document.body.classList.remove("modal-open");
-  console.log(cart);
 }
 
 window.addEventListener("load", function () {
@@ -25,13 +25,12 @@ window.addEventListener("load", function () {
 
 function addItemToOrder(event) {
   const thisItem = event.target.productInfo;
-  let type = thisItem[0];
-  let size = thisItem[1];
-  let price = thisItem[2];
-  cart.push(thisItem)
+  let newCartItem = document.createElement("li")
+  newCartItem.innerText=thisItem;
+cartElement.appendChild(newCartItem)
 }
 
-fetch("/data.json", {
+fetch("data.json", {
   method: "GET",
 })
   .then(function (response) {
