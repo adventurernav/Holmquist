@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Holmquist App</title>
+</head>
+<body>
+    <header>
+        <h1>Holmquist Hazelnut Orchard</h1>
+    </header>
+    <div class="wrapper">
+        <div class="section">
+            <button onclick="openModal('saleModal')">New Sale</button>
+            <p>Today's Net Sales: (CC + cash - stall fee)</p>
+            <p>Sales Goal</p>
+        
+            <div id="saleModal" class="modal">
+                <div class="modal-body">
+                    <h1>Let's sell some shit</h1>
+                    <div id="sale-button-wrapper"></div>
+                    <ul id="cart"></ul>
+                    <button onclick="cancelModal()">Cancel</button>
+                    <button onclick="submitCart()">Submit</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="section">
+            <button>Inventory</button>
+        </div>
+        <div class="section">
+            <button>Accounting</button>
+        </div>
+    </div>
+    <footer>
+        <p>Heather Loveday, 2025</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
