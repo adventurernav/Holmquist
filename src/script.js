@@ -4,26 +4,6 @@ let products = [];
 let cart = [];
 
 
-function openModal(id) {
-  document.getElementById(id).classList.add("open");
-  document.body.classList.add("modal-open");
-}
-
-function cancelModal() {
-  document.querySelector(".modal.open").classList.remove("open");
-  document.body.classList.remove("modal-open");
-  emptyCart();
-}
-
-window.addEventListener("load", function () {
-  // close modals on background click
-  document.addEventListener("click", (event) => {
-    if (event.target.classList.contains("modal")) {
-      closeModal();
-    }
-  });
-});
-
 let emptyCart = () => {
   cart = [];
   cartElement.replaceChildren();
@@ -78,17 +58,17 @@ fetch("data.json", {
   .then(function (json) {
     json.inventory.forEach((itemTypeObject) => {
       itemTypeObject.variants.forEach((product) => {
-        let newItemButton = document.createElement("button");
-        newItemButton.textContent = `${itemTypeObject.productType}, ${product.size}`;
-        newItemButton.addEventListener("click", addItemToOrder);
-        newItemButton.productInfo = {
-          id: product.id,
-          productType: itemTypeObject.productType,
-          size: product.size,
-          price: product.price,
-          quantity: 1
-      };
-        saleButtonWrapper.appendChild(newItemButton);
+        // let newItemButton = document.createElement("button");
+        // newItemButton.textContent = `${itemTypeObject.productType}, ${product.size}`;
+        // newItemButton.addEventListener("click", addItemToOrder);
+      //   newItemButton.productInfo = {
+      //     id: product.id,
+      //     productType: itemTypeObject.productType,
+      //     size: product.size,
+      //     price: product.price,
+      //     quantity: 1
+      // };
+        
       });
     });
   });
