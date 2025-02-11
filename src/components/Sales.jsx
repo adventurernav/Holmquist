@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Button } from "@mui/material";
+import { Button, List, ListItem } from "@mui/material";
 import { ShoppingBagOutlined } from "@mui/icons-material";
 
 export default function Sales(props) {
@@ -8,11 +8,10 @@ export default function Sales(props) {
   const [buttonUI, setButtonUI] = useState(null);
 
   useEffect(() => {
-    let data = props.json;
+    let data = props;
+
     if (data.hasOwnProperty("products")) {
       setProducts(data.products);
-      console.log(data.products);
-      
     }
 
     // if (data.hasOwnProperty("cart")) {
@@ -22,7 +21,6 @@ export default function Sales(props) {
 
   useEffect(() => {
     if (products.length > 0) {
-      
       setButtonUI(productButtonsLoop(products));
     }
 
@@ -30,27 +28,24 @@ export default function Sales(props) {
   }, [products]);
 
   let productButtonsLoop = (productArrayState) => {
-    let newButtonArray;
-    
-    if (Array.isArray(productArrayState) && productArrayState.length > 0) {
-      
-      newButtonArray = productArrayState.map((product) => {
+    let newButtonArray = [];
 
-        return <Button>{product.productType}</Button>
-        // if (Array.isArray(product.variants) && product.variants.length > 0) {
-        //   product.variants.map((variant) => {
-        //     return (
-        //       <Button>
-        //         {product.productType}, {variant.size} ounces, ${variant.price}
-        //       </Button>
-        //     );
-        //   });
-        // }
+    if (Array.isArray(productArrayState) && productArrayState.length > 0) {
+      newButtonArray = productArrayState.map((product, index) => {
+        if (Array.isArray(product.variants) && product.variants.length > 0) {
+          const productVariants = product.variants.map((variant, i) => {
+            return (
+              <ListItem key={variant.id}>
+                <Button >
+                  {product.productType}, {variant.size} ounces, ${variant.price}
+                </Button>
+              </ListItem>
+            );
+          });
+          return productVariants;
+        }
       });
-    } 
-    // else {
-    //   return <div>productButtonsLoop is broken</div>;
-    // }
+    }
     return newButtonArray;
   };
 
@@ -67,8 +62,7 @@ export default function Sales(props) {
       >
         <ShoppingBagOutlined />
       </Button>
-
-      {buttonUI}
+      <List>{buttonUI}</List>
     </div>
   );
 }
