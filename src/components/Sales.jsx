@@ -1,8 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Button } from "@mui/material";
 import { ShoppingBagOutlined } from "@mui/icons-material";
 
+
 export default function Sales(props) {
+  
+  const [jsonData, setJsonData] = useState({})
+
+  useEffect(() => {
+    let data = props;
+    setJsonData(data)
+    console.log(props);
+    
+  }, [])
+  useEffect(() => {
+    console.log(jsonData.json);
+    
+  }, [jsonData])
+  
 // console.log(props);
 // let props.json = jsonData;
 // let props.cart = cart;
