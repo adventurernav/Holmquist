@@ -1,20 +1,22 @@
 {
-    "inventory": [
+    "products": [
         {
             "productType": "Butter Toffee",
             "abbreviation": "BT",
             "variants": [
                 {
-                    "size": "6 ounces",
+                    "id": "001",
+                    "size": 6,
                     "price": 9,
                     "startingInventory": 48,
-                    "feb3":46
+                    "februaryThirdClosingInventory": 46
                 },
                 {
-                    "size": "16 ounces",
+                    "id": "002",
+                    "size": 16,
                     "price": 17,
                     "startingInventory": 60,
-                    "feb3":53
+                    "februaryThirdClosingInventory": 53
                 }
             ],
             "allergens": [
@@ -26,16 +28,18 @@
             "abbreviation": "CG",
             "variants": [
                 {
-                    "size": "6 ounces",
+                    "id": "003",
+                    "size": 6,
                     "price": 9,
-                    "startingInventory":24,
-                    "feb3":21
+                    "startingInventory": 24,
+                    "februaryThirdClosingInventory": 21
                 },
                 {
-                    "size": "16 ounces",
+                    "id": "004",
+                    "size": 16,
                     "price": 17,
-                    "startingInventory":30,
-                    "feb3":32
+                    "startingInventory": 30,
+                    "februaryThirdClosingInventory": 32
                 }
             ],
             "allergens": [
@@ -47,16 +51,18 @@
             "abbreviation": "FL",
             "variants": [
                 {
-                    "size": "6 ounces",
+                    "id": "005",
+                    "size": 6,
                     "price": 9,
-                    "startingInventory":24,
-                    "feb3":24
+                    "startingInventory": 24,
+                    "februaryThirdClosingInventory": 24
                 },
                 {
-                    "size": "16 ounces",
+                    "id": "006",
+                    "size": 16,
                     "price": 17,
-                    "startingInventory":20,
-                    "feb3":18
+                    "startingInventory": 20,
+                    "februaryThirdClosingInventory": 18
                 }
             ],
             "allergens": [
@@ -68,14 +74,16 @@
             "abbreviation": "SS",
             "variants": [
                 {
-                    "size": "6 ounces",
+                    "id": "007",
+                    "size": 6,
                     "price": 9,
-                    "startingInventory":24
+                    "startingInventory": 24
                 },
                 {
-                    "size": "16 ounces",
+                    "id": "008",
+                    "size": 16,
                     "price": 17,
-                    "startingInventory":30
+                    "startingInventory": 30
                 }
             ],
             "allergens": [
@@ -87,16 +95,18 @@
             "abbreviation": "RO",
             "variants": [
                 {
-                    "size": "6 ounces",
+                    "id": "009",
+                    "size": 6,
                     "price": 9,
-                    "startingInventory":48,
-                    "feb3": 51
+                    "startingInventory": 48,
+                    "februaryThirdClosingInventory": 51
                 },
                 {
-                    "size": "16 ounces",
+                    "id": "010",
+                    "size": 16,
                     "price": 17,
-                    "startingInventory":60,
-                    "feb3":52
+                    "startingInventory": 60,
+                    "februaryThirdClosingInventory": 52
                 }
             ],
             "allergens": [
@@ -108,10 +118,11 @@
             "abbreviation": "NT",
             "variants": [
                 {
-                    "size": "16 ounces",
+                    "id": "011",
+                    "size": 16,
                     "price": 17,
-                    "startingInventory":20,
-                    "feb3":18
+                    "startingInventory": 20,
+                    "februaryThirdClosingInventory": 18
                 }
             ],
             "allergens": [
@@ -123,10 +134,11 @@
             "abbreviation": "CH",
             "variants": [
                 {
-                    "size": "16 ounces",
+                    "id": "012",
+                    "size": 16,
                     "price": 17,
-                    "startingInventory":10,
-                    "feb3":10
+                    "startingInventory": 10,
+                    "februaryThirdClosingInventory": 10
                 }
             ],
             "allergens": [
@@ -138,10 +150,11 @@
             "abbreviation": "FL",
             "variants": [
                 {
-                    "size": "16 ounces",
+                    "id": "013",
+                    "size": 16,
                     "price": 17,
-                    "startingInventory":10,
-                    "feb3":10
+                    "startingInventory": 10,
+                    "februaryThirdClosingInventory": 10
                 }
             ],
             "allergens": [
@@ -153,16 +166,18 @@
             "abbreviation": "Oi",
             "variants": [
                 {
-                    "size": "8 ounces",
+                    "id": "014",
+                    "size": 8,
                     "price": 17,
-                    "startingInventory":12,
-                    "feb3":12
+                    "startingInventory": 12,
+                    "februaryThirdClosingInventory": 12
                 },
                 {
-                    "size": "12 ounces",
+                    "id": "015",
+                    "size": 12,
                     "price": 22,
-                    "startingInventory":10,
-                    "feb3":8
+                    "startingInventory": 10,
+                    "februaryThirdClosingInventory": 8
                 }
             ],
             "allergens": [
@@ -174,10 +189,11 @@
             "abbreviation": "MC",
             "variants": [
                 {
-                    "size": "6 ounces",
+                    "id": "016",
+                    "size": 6,
                     "price": 12,
-                    "startingInventory":9,
-                    "feb3":9
+                    "startingInventory": 9,
+                    "februaryThirdClosingInventory": 9
                 }
             ],
             "allergens": [
@@ -189,10 +205,11 @@
             "abbreviation": "DC",
             "variants": [
                 {
-                    "size": "6 ounces",
+                    "id": "017",
+                    "size": 6,
                     "price": 12,
-                    "startingInventory":9,
-                    "feb3":9
+                    "startingInventory": 9,
+                    "februaryThirdClosingInventory": 9
                 }
             ],
             "allergens": [
@@ -204,15 +221,32 @@
             "abbreviation": "GP",
             "variants": [
                 {
-                    "size": "4 x 4 ounces",
+                    "id": "018",
+                    "size": 16,
                     "price": 23,
-                    "startingInventory":30,
-                    "feb3":33
+                    "startingInventory": 30,
+                    "februaryThirdClosingInventory": 33
                 }
             ],
             "allergens": [
                 "dairy"
             ]
+        }
+    ],
+    "compSales": [
+        {
+            "012024": 3420,
+            "022024": 4248,
+            "032024": 6125,
+            "042024": 5448,
+            "052024": 5944,
+            "062024": 7215,
+            "072024": 5132,
+            "082024": 7255,
+            "092024": 5244,
+            "102024": 4260,
+            "112024": 7415,
+            "122024": 7200
         }
     ]
 }
