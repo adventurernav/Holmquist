@@ -1,6 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
 import * as React from "react";
-import {  Box, BottomNavigation, BottomNavigationAction } from "@mui/material";
+import { Box, BottomNavigation, BottomNavigationAction } from "@mui/material";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import LocalGroceryStoreOutlinedIcon from "@mui/icons-material/LocalGroceryStoreOutlined";
 import CalculateOutlinedIcon from "@mui/icons-material/CalculateOutlined";
@@ -32,14 +32,13 @@ function SimpleBottomNavigation() {
         />
         <BottomNavigationAction
           label="Inventory"
-          icon={<CalculateOutlinedIcon />}
+          icon={<InventoryOutlinedIcon />}
           component={Link}
-          to="/nopage"
-          disabled
+          to="/inventory"
         />
         <BottomNavigationAction
           label="Accounts"
-          icon={<InventoryOutlinedIcon />}
+          icon={<CalculateOutlinedIcon />}
           component={Link}
           to="/nopage"
           disabled
@@ -52,7 +51,7 @@ const Layout = () => {
   return (
     <>
       <Outlet />
-      
+
       <SimpleBottomNavigation />
     </>
   );
