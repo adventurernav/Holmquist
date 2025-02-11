@@ -2,14 +2,8 @@
   "short_name": "React App",
   "name": "Create React App Sample",
   "icons": [
-
     {
-      "src": "logo.webp",
-      "type": "image/x-icon",
-      "sizes": "483x483"
-    },
-    {
-      "src": "logo.webp",
+      "src": "assets/logo.png",
       "type": "image/png",
       "sizes": "483x483"
     }
