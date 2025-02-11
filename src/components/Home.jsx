@@ -10,7 +10,7 @@ function Home() {
         <ListItem>{new Date().toLocaleString()}</ListItem>
         <ListItem>Daily Sales: </ListItem>
         <ListItem>Monthly Sales: </ListItem>
-        <ListItem>Montly Comp Target: </ListItem>
+        <ListItem>Monthly Comp Target: </ListItem>
         <ListItem>Top 3 Products:</ListItem>
       </List>
     </div>
