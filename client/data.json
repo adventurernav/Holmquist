@@ -1,0 +1,218 @@
+{
+    "inventory": [
+        {
+            "productType": "Butter Toffee",
+            "abbreviation": "BT",
+            "variants": [
+                {
+                    "size": "6 oz",
+                    "price": 9,
+                    "startingInventory": 48,
+                    "feb3":46
+                },
+                {
+                    "size": "16 oz",
+                    "price": 17,
+                    "startingInventory": 60,
+                    "feb3":53
+                }
+            ],
+            "allergens": [
+                "none"
+            ]
+        },
+        {
+            "productType": "Coffee Glazed",
+            "abbreviation": "CG",
+            "variants": [
+                {
+                    "size": "6 oz",
+                    "price": 9,
+                    "startingInventory":24,
+                    "feb3":21
+                },
+                {
+                    "size": "16 oz",
+                    "price": 17,
+                    "startingInventory":30,
+                    "feb3":32
+                }
+            ],
+            "allergens": [
+                "none"
+            ]
+        },
+        {
+            "productType": "Firey Lime",
+            "abbreviation": "FL",
+            "variants": [
+                {
+                    "size": "6 oz",
+                    "price": 9,
+                    "startingInventory":24,
+                    "feb3":24
+                },
+                {
+                    "size": "16 oz",
+                    "price": 17,
+                    "startingInventory":20,
+                    "feb3":18
+                }
+            ],
+            "allergens": [
+                "none"
+            ]
+        },
+        {
+            "productType": "Sea Salt",
+            "abbreviation": "SS",
+            "variants": [
+                {
+                    "size": "6 oz",
+                    "price": 9,
+                    "startingInventory":24
+                },
+                {
+                    "size": "16 oz",
+                    "price": 17,
+                    "startingInventory":30
+                }
+            ],
+            "allergens": [
+                "none"
+            ]
+        },
+        {
+            "productType": "Roasted",
+            "abbreviation": "RO",
+            "variants": [
+                {
+                    "size": "6 oz",
+                    "price": 9,
+                    "startingInventory":48,
+                    "feb3": 51
+                },
+                {
+                    "size": "16 oz",
+                    "price": 17,
+                    "startingInventory":60,
+                    "feb3":52
+                }
+            ],
+            "allergens": [
+                "none"
+            ]
+        },
+        {
+            "productType": "Natural",
+            "abbreviation": "NT",
+            "variants": [
+                {
+                    "size": "16 oz",
+                    "price": 17,
+                    "startingInventory":20,
+                    "feb3":18
+                }
+            ],
+            "allergens": [
+                "none"
+            ]
+        },
+        {
+            "productType": "Chopped",
+            "abbreviation": "CH",
+            "variants": [
+                {
+                    "size": "16 oz",
+                    "price": 17,
+                    "startingInventory":10,
+                    "feb3":10
+                }
+            ],
+            "allergens": [
+                "none"
+            ]
+        },
+        {
+            "productType": "Flour",
+            "abbreviation": "FL",
+            "variants": [
+                {
+                    "size": "16 oz",
+                    "price": 17,
+                    "startingInventory":10,
+                    "feb3":10
+                }
+            ],
+            "allergens": [
+                "none"
+            ]
+        },
+        {
+            "productType": "Oil",
+            "abbreviation": "Oi",
+            "variants": [
+                {
+                    "size": "8 oz",
+                    "price": 17,
+                    "startingInventory":12,
+                    "feb3":12
+                },
+                {
+                    "size": "12 oz",
+                    "price": 22,
+                    "startingInventory":10,
+                    "feb3":8
+                }
+            ],
+            "allergens": [
+                "none"
+            ]
+        },
+        {
+            "productType": "Milk Chocolate",
+            "abbreviation": "MC",
+            "variants": [
+                {
+                    "size": "6 oz",
+                    "price": 12,
+                    "startingInventory":9,
+                    "feb3":9
+                }
+            ],
+            "allergens": [
+                "dairy"
+            ]
+        },
+        {
+            "productType": "Dark Chocolate",
+            "abbreviation": "DC",
+            "variants": [
+                {
+                    "size": "6 oz",
+                    "price": 12,
+                    "startingInventory":9,
+                    "feb3":9
+                }
+            ],
+            "allergens": [
+                "dairy"
+            ]
+        },
+        {
+            "productType": "Gift Pack",
+            "abbreviation": "GP",
+            "variants": [
+                {
+                    "size": "4 x 4 oz",
+                    "price": 23,
+                    "startingInventory":30,
+                    "feb3":33
+                }
+            ],
+            "allergens": [
+                "dairy"
+            ]
+        }
+    ]
+}
