@@ -4,8 +4,10 @@ import { ShoppingBagOutlined } from "@mui/icons-material";
 
 export default function Sales(props) {
   const [products, setProducts] = useState([]);
-  // const [cart, setCart] = useState({});
   const [buttonUI, setButtonUI] = useState(null);
+
+  let editCart = props.editCart;
+  let cart = props.cart;
 
   useEffect(() => {
     let data = props;
@@ -27,6 +29,8 @@ export default function Sales(props) {
     // add cart to dependencies array
   }, [products]);
 
+  
+
   let productButtonsLoop = (productArrayState) => {
     let newButtonArray = [];
 
@@ -36,8 +40,8 @@ export default function Sales(props) {
           const productVariants = product.variants.map((variant, i) => {
             return (
               <ListItem key={variant.id}>
-                <Button >
-                  {product.productType}, {variant.size} ounces, ${variant.price}
+                <Button onClick={(cart)=>editCart(variant.id, "increment", null, cart )}>
+                  {product.abbreviation}, {variant.size} oz, ${variant.price}
                 </Button>
               </ListItem>
             );
@@ -58,7 +62,6 @@ export default function Sales(props) {
         aria-label="Cart"
         href="/cart"
         variant="outlined"
-        disabled
       >
         <ShoppingBagOutlined />
       </Button>
